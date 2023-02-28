@@ -5,7 +5,7 @@ export default function Footer({ clearAllBasket, totalMoney }) {
       <hr />
       <div class="cart-total">
         <h4>
-          total <span>${totalMoney}</span>
+          total <span>${totalMoney.toFixed(2)}</span>
         </h4>
       </div>
       <button class="btn clear-btn" onClick={clearAllBasket}>
